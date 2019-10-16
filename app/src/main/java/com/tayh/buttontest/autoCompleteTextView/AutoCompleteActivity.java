@@ -29,6 +29,7 @@ import java.util.List;
  */
 public class AutoCompleteActivity extends AppCompatActivity {
 
+
     AutoCompleteTextView autoCompleteTextView;
     String[] data = {"111", "2222", "11,23", "张三", "李四"};
     AutoEditAdapter adapter;
