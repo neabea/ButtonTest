@@ -43,6 +43,7 @@ public class AutoEditAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public Filter getFilter() {
+
         if (mFilter == null) {
             mFilter = new ArrayFilter();
         }
