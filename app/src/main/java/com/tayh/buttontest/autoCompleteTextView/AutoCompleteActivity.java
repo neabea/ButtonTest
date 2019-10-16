@@ -93,6 +93,7 @@ public class AutoCompleteActivity extends AppCompatActivity {
     }
 
     class Mythread extends Thread{
+
         volatile boolean isStop = false;
         @Override
         public void run() {
