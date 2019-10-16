@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="emplee1"
+            type="com.tayh.buttontest.databinding.Emplyee">
+
+        </variable>
+        <variable
+            name="present1"
+            type="com.tayh.buttontest.databinding.DataBindingActivity.Presenters">
+        </variable>
+    </data>
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@{emplee1.firstName}"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@{emplee1.secName}"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onTextChanged="@{present1::onTextChanged}"
+            android:hint="23123"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{present1::onClick}"
+            android:text='@{emplee1.isFire?"button":"btn"}'/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->present1.onClickBack(emplee1)}"
+            android:text='@{emplee1.arrayList[1]??"button"}'/>
+
+        <include
+            layout="@layout/include_demo"
+            bind:emple2 = "@{emplee1}"
+            />
+        <ViewStub
+            android:id="@+id/viewstub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/viewstub_demo"/>
+
+</LinearLayout>
+
+</layout>

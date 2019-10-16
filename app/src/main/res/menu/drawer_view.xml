@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@color/colorAccent"
+            android:title="首页"
+            ></item>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@color/colorAccent"
+            android:title="事项"
+            ></item>
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@color/colorAccent"
+            android:title="音乐"
+            ></item>
+        <item
+            android:id="@+id/nav_discuss"
+            android:icon="@color/colorAccent"
+            android:title="消息"
+            ></item>
+    <!--<item android:title="其他"-->
+        <!--&gt;-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:icon="@color/colorAccent"-->
+                <!--android:title="设置"-->
+                <!--&gt;</item>-->
+            <!--<item-->
+                <!--android:icon="@color/colorAccent"-->
+                <!--android:title="关于我们"-->
+                <!--&gt;</item>-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>
