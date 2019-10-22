@@ -73,11 +73,10 @@ public class MyApplication extends Application {
     }
 
     private void setDefNotifIcon() {
-        Drawable drawable = getApplicationContext().getResources().getDrawable(R.mipmap.ic_launcher);
+        Drawable drawable = getApplicationContext().getResources().getDrawable(R.drawable.ic_camera);
         if (drawable != null) {
             Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
             pushService.setNotificationLargeIcon(bitmap);
-            Log.i("zeyu", "Set notification largeIcon res id to R.");
         }
     }
 
